@@ -4,55 +4,60 @@
     <title>WEB -2 Css</title>
     <meta charset="utf-8">
   </head>
-
-  <body>
-    <h1><a href="index.html" >WEB</a></h1>
-    <ol>
-    <li><a href="1.html" class="saw">HTML</a></li>
-    <li><a href="2.html" class="saw" id ="active">CSS</a></li>
-    <li><a href="3.html">JavaScript</a></li>
-    </ol>
-    <!--- style 안의 들어있는 말의 뜻은 a 테그를 한 것들의 기본 style 은 a{} 안의 내용과 같다는 의미-->
     <style>
-      ol{
+       #grid ol{
         border-right: 1px solid gray;
         width: 100px;
         margin: 0px;
-        padding: 20px;
+        padding: 33px;
       }
       a{
         color: black;
         text-decoration: none;
       }
-      .saw{
-        color: gray;
-      }
-      #active{
-        color: red;
-      }
       h1{
         font-size: 50px;
-        border-bottom: 3px solid gray;
+        border-bottom: 1px solid gray;
         padding: 20px;
         margin: 0px;
 
       }
       body{
-        margin: 0px;
+        margin: 2px;
+      }
+      #grid{
+        display: grid;
+        grid-template-columns: 150px 1fr;
+      }
+      #article{
+        padding-left: 25px;
       }
     </style>
+  <body>
+    <h1><a href="index.html" >WEB</a></h1>
+    <div id="grid">
+      <ol>
+      <li><a href="1.html" class="saw">HTML</a></li>
+      <li><a href="2.html" class="saw" id ="active">CSS</a></li>
+      <li><a href="3.html">JavaScript</a></li>
+      </ol>
+      <!--- style 안의 들어있는 말의 뜻은 a 테그를 한 것들의 기본 style 은 a{} 안의 내용과 같다는 의미-->
+      <div id="article" >
+        <h2>CSS 이란 무엇인가..?</h2>
+        <p>
+        <strong>Cascading Style Sheets (CSS)</strong> is a style sheet language used for describing the presentation of a
+        document written in a markup language such as HTML. CSS is a cornerstone technology of the World Wide Web,
+        alongside HTML and JavaScript.
+        </p style ="magin-top:40px">
+        <img src="C:\Users\cjffy\OneDrive\사진\Saved Pictures\케시퍼.jpg" width="50%">
+        <p>CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts.[3] This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file which reduces complexity and repetition in the structural content as well as enabling the .css file to be cached to improve the page load speed between the pages that share the file and its formatting.
+        </p>
 
-
-    <h2>CSS 이란 무엇인가..?</h2>
-    <p>
-      <strong>Cascading Style Sheets (CSS)</strong> is a style sheet language used for describing the presentation of a
-    document written in a markup language such as HTML. CSS is a cornerstone technology of the World Wide Web,
-     alongside HTML and JavaScript.
-    </p style ="magin-top:40px">
-    <img src="C:\Users\cjffy\OneDrive\사진\Saved Pictures\케시퍼.jpg" width="50%">
-    <p>CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts.[3] This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file which reduces complexity and repetition in the structural content as well as enabling the .css file to be cached to improve the page load speed between the pages that share the file and its formatting.
-    </p>
-
-    <p>Resources</p>
+        <p>Resources</p>
+      </div>
+    
+      
+    </div>
   </body>
+  
 </html>
